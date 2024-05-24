@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+.time {
+  font-style: italic;
+  font-size: large;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 650px;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.nav_bar {
+  display: flex;
+  align-items: center;
+  background: #000;
+  height: 70px;
+
+  /* justify-content: space-between; */
+  padding: 10px 7%;
+}
+
+.logo {
+  margin-left: -40px;
+  padding: 0;
+  height: 40px;
+}
+
+.main_title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.nav_bar .main_title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0cm;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+nav {
+  font-family: "Roboto Black", "Arial Bold", sans-serif;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  position: relative;
+  left: 600px;
+}
+nav ul li {
+  margin-right: 40px;
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: larger;
+  color: #fff;
+}
+a:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+body {
+  background: #000;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 46px;
+  margin-bottom: 0px;
+  color: red;
+  font-family: "Anton", "Arial Bold", sans-serif;
+}
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid red;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: red;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: red;
+}
+
+::selection {
+  background-color: red;
+  color: #000;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_2.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header class="nav_bar">
+      <img class="logo title" src="./items/kc.png" alt="logo" />
+      <a class="main_title title" href="#"><h2>KUNVUTH SEREYRITH</h2></a>
+      <nav>
+        <ul>
+          <li><a href="index.html#about_me">ABOUT</a></li>
+          <li><a href="index.html#my_skills">SKILLS</a></li>
+          <li>
+            <a href="./items/Kunvuth_SereyrithCV.pdf" target="_blank">RESUME</a>
+          </li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>CONTACT</h1>
+    <p id="Phnom_Penh" class="time">Phnom Penh -</p>
+    <p id="current-time" class="time"></p>
+
+    <script id="time">
+      // Function to update the time
+      function updateTime() {
+        var now = new Date();
+        var options = { timeZone: "Asia/Phnom_Penh" };
+        var currentTime = now.toLocaleTimeString("en-US", options);
+        document.getElementById("current-time").textContent = currentTime;
+      }
+      // Call updateTime function every second to keep the time updated
+      setInterval(updateTime, 1000);
+
+      // Initial call to display time immediately
+      updateTime();
+    </script>
+    <form>
+      <input
+        name="name"
+        type="text"
+        class="feedback-input"
+        placeholder="Name"
+      />
+      <input
+        name="email"
+        type="text"
+        class="feedback-input"
+        placeholder="Email"
+      />
+      <textarea
+        name="text"
+        class="feedback-input"
+        placeholder="Message"
+      ></textarea>
+      <input type="submit" value="SUBMIT" />
+    </form>
+  </body>
+</html>
